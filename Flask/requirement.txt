@@ -1,0 +1,7 @@
+sqlalchemy==2.0.35
+starlette==0.38.6
+fastapi[standard]==0.115.0
+uvicorn==0.30.6
+asyncpg==0.29.0
+Werkzeug==3.0.4
+PyJWT==1.7.1
