@@ -21,7 +21,7 @@ const LoginForm = () => {
 
                 <div className="remember-forgot">
                     <label><input type="checkbox" /> Lưu truy cập</label>
-                    <a href="#"> Quên mật khẩu?</a>
+                    <a href="/forgot-password"> Quên mật khẩu?</a>
                 </div>
 
                 <button type="submit">Đăng nhập</button>

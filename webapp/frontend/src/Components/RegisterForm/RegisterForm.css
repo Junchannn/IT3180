@@ -46,16 +46,26 @@
 
 .register-form button {
     width: 100%;
-    height: 55px; 
+    height: 55px;
     background: #fff;
     border: none;
     outline: none;
     border-radius: 40px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    font-size: 18px; 
+    font-size: 18px;
     color: #333;
     font-weight: 700;
+    transition: background 0.3s ease, transform 0.2s ease; 
+}
+
+.register-form button:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.register-form button:active {
+    transform: scale(0.8); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 .register-form .login-link {
