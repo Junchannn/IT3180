@@ -1,10 +1,11 @@
 .register-form {
     width: 525px;
-    background: rgba(12, 3, 10, 0.7);
+    background: rgba(0, 0, 0, 0.7);
     border: 2px solid rgba(255, 255, 255, 0.2);
     color: #fff;
-    border-radius: 10px;
+    border-radius: 100px;
     padding: 37.5px 50px; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
 }
 
 .register-form h1 {
@@ -75,7 +76,7 @@
 }
 
 .login-link p a {
-    color: #fff;
+    color: #61dafb; 
     text-decoration: none;
     font-weight: 600;
 }

@@ -1,0 +1,80 @@
+.register-info {
+    width: 525px;
+    background: rgba(0, 0, 0, 0.7); /* độ mờ 70% */
+    border: 2px solid rgba(255, 255, 255, 0.4); 
+    color: #fff;
+    border-radius: 100px; 
+    padding: 37.5px 50px; 
+    margin: 50px auto; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.register-info h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px; 
+}
+
+.register-info .input-box {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin: 37.5px 0; 
+}
+
+.register-info input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.2); /* Border trắng mờ */
+    outline: none;
+    border-radius: 40px; /* Bo góc input */
+    font-size: 18px;
+    color: #fff;
+    padding: 22.5px 55px 22.5px 25px; /* Padding cho input */
+}
+
+.register-info input::placeholder {
+    color: #fff; /* Placeholder màu trắng */
+    font-size: 16px;
+}
+
+.register-info button {
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    cursor: pointer;
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    transition: background 0.3s ease, transform 0.2s ease; 
+}
+
+.register-info button:hover {
+    background: rgba(255, 255, 255, 0.8); 
+}
+
+.register-info button:active {
+    transform: scale(0.8); 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.register-info .login-link {
+    font-size: 16px;
+    text-align: center;
+    margin: 25px 0 15px;
+}
+
+.register-info .login-link p a {
+    color: #61dafb; 
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-info .login-link p a:hover {
+    text-decoration: underline;
+}
