@@ -7,11 +7,12 @@ const LoginInfo = () => {
     const [dob, setDob] = useState('');
     const [hometown, setHometown] = useState('');
     const [apartmentNumber, setApartmentNumber] = useState('');
+    const [identityCard, setIdentityCard] = useState('');
 
     const handleSubmit = (e) => {
         e.preventDefault();
         // CODE HERE
-        console.log({ fullName, dob, hometown, apartmentNumber });
+        console.log({ fullName, dob, hometown, identityCard, apartmentNumber });
     };
 
     return (
@@ -42,6 +43,15 @@ const LoginInfo = () => {
                         placeholder="Quê quán"
                         value={hometown}
                         onChange={(e) => setHometown(e.target.value)}
+                        required
+                    />
+                </div>
+                <div className='input-box'>
+                    <input
+                        type='number'
+                        placeholder='CMND/CCCD'
+                        value={identityCard}
+                        onChange={(e) => setApartmentNumber(e.target.value)}
                         required
                     />
                 </div>

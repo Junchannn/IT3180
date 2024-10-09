@@ -1,9 +1,9 @@
 .login-form {
     width: 525px;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(21, 51, 53, 0.7);
     border: 2px solid rgba(255, 255, 255, 0.4);
     color: #fff;
-    border-radius: 100px;
+    border-radius: 50px;
     padding: 37.5px 50px; 
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
 }
