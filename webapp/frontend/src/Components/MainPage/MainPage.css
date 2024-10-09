@@ -1,0 +1,76 @@
+.mainPage {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  /* background-color: #f0f0f0; */
+  background: rgba(0, 0, 0, 0.7);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  color: #fff;
+  border-radius: 100px;
+  padding: 37.5px 50px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.image-container {
+  position: relative;
+  margin-right: 20px;
+  width: 500px;
+}
+
+
+.content-image {
+  width: 500px;
+  height: auto;
+  border-radius: 50px;
+  filter: blur(2px);
+}
+.content-image:hover {
+  filter: blur(0);
+  transition: filter 5s ease;
+  transform: scale(1.05);
+}
+.overlay-text {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 36px;
+  text-align: left;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 50px;
+}
+
+.main-button {
+  padding: 15px 30px;
+  margin: 10px;
+  font-size: 25px;
+  font-weight: 700;
+  color: #000;
+  background-color: #fff;
+  border: none;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure buttons have the same width */
+  text-align: center; /* Center text inside the button */
+}
+
+.main-button:hover {
+  background-color: #0056b3;
+}
+
+/* .footer-text {
+  position: absolute;
+  bottom: 10px;
+  right: 100px;
+  font-size: 14px;
+  color: #fff;
+} */
