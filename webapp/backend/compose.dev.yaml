@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:12.20-alpine3.20
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=dev
+    ports:
+      - 5432:5432
+    volumes:
+      - ./conf/init-db:/docker-entrypoint-initdb.d
+    networks:
+      - db_network
+
+  # Optional: You can add an application service if needed
+  # app:
+  #   build: .
+  #   depends_on:
+  #     - db
+  #   environment:
+  #     - DATABASE_URL=postgresql+asyncpg://postgres:postgres@db:5432/dev
+  #   networks:
+  #     - db_network
+
+networks:
+  db_network:
+    driver: bridge
