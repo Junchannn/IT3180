@@ -4,7 +4,14 @@ from sqlalchemy.orm import (
     Mapped,
     DeclarativeBase
 )
-from sqlalchemy import String, Boolean, Integer, ForeignKey
+from sqlalchemy import (
+    String, 
+    Boolean, 
+    Integer, 
+    ForeignKey, 
+    Sequence,
+    DateTime
+)
 from sqlalchemy.ext.asyncio import AsyncAttrs
 from datetime import datetime
 class Base(AsyncAttrs, DeclarativeBase):
@@ -33,8 +40,13 @@ class Member(Base):
 
 class Code(Base):
     __tablename__ = "code"
-    id: Mapped[int] = mapped_column(Integer, primary_key=True),
+
+    # Define the sequence
+    id_seq = Sequence('forget_id', start=1, increment=1)
+    
+    # Define the columns using mapped_column
+    id: Mapped[int] = mapped_column(Integer, id_seq, primary_key=True, server_default=id_seq.next_value())
     mail: Mapped[str] = mapped_column(String, nullable=False)
     reset_code: Mapped[str] = mapped_column(String, nullable=False)
-    status: Mapped[bool] = mapped_column(bool, nullable=False)
+    status: Mapped[bool] = mapped_column(Boolean, nullable=False)
     expired_in: Mapped[datetime] = mapped_column(DateTime)
