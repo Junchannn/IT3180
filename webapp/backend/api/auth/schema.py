@@ -19,4 +19,5 @@ class TokenData(BaseModel):
     username: str | None = None
 
 class ForgotPassword(BaseModel):
-    email: str = Field(..., example="example@example.com")
+    mail: str = Field(..., example="example@example.com")
+
