@@ -2,16 +2,13 @@ from functools import lru_cache
 from utils import config
 from sqlalchemy.ext.asyncio import create_async_engine, AsyncSession, AsyncEngine, async_sessionmaker
 
-@lru_cache()
-def get_settings():
-    return config.Settings()
 
 def get_database_url() -> str:
-    settings = get_settings()
+    settings = config.get_settings()
     return f"postgresql+asyncpg://{settings.DB_USERNAME}:{settings.DB_PASSWORD}@{settings.DB_HOST}:{settings.DB_PORT}/{settings.DB_DATABASE}"
 
-DATABASE_URL = get_database_url()
 
+DATABASE_URL = get_database_url()
 engine: AsyncEngine = create_async_engine(DATABASE_URL, echo=True)
 
 # Session maker for async sessions
