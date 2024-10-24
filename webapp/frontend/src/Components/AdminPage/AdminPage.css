@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the top */
+  min-height: 100vh;
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Add some padding */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* Container for the admin page content */
+.admin-container {
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width */
+  background: white; /* Background color for the container */
+  padding: 20px; /* Padding inside the container */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  border-radius: 8px; /* Rounded corners */
+  margin-top: 20px; /* Margin from the top */
+}
